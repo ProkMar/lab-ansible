@@ -27,3 +27,12 @@
 ### Примеры запуска:
     * ansible-playbook -K install_nginx.yml -i <your path>/lab-ansible/playbook/hosts.ini
     * ansible-playbook -K install_postgres.yml -i <your path>/lab-ansible/playbook/hosts.ini
+
+После выполнения плейбуков обращение по адресу виртуальной машины по http выдает текст:
+# nginx, configured by Ansible
+If you can see this, Ansible successfully installed nginx.
+
+Ansible managed
+
+
+а к серверу postgres можно подключиться клиентом, например DBeaver.
