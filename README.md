@@ -20,24 +20,10 @@
 Каждый из них может быть настроен на установку на отдельной или одной
 и тоже машины.
 
-## Удаление
-Если установка ПО выполнена на реальных машинах, то можно
-выполнить плейбуки удаления установленного ПО:
-    * remove_nginx.yml
-    * remove_postgres.yml
-
-если они на самом деле не нужны на этих компьютерах.
-
 ### Примеры проверки:
     * ansible-playbook -KC install_nginx.yml -i <your path>/lab-ansible/playbook/hosts.ini
-    * ansible-playbook -KC install_postgres.yml -i <your path>/lab-ansible/playbook/hosts.ini
-
-    * ansible-playbook -KC remove_nginx.yml -i <your path>/lab-ansible/playbook/hosts.ini
-    * ansible-playbook -KC remove_postgres.yml -i <your path>/lab-ansible/playbook/hosts.ini
+    * ansible-playbook -KC install_postgres.yml -i <your path>/lab-ansible/playbook/hosts.ini   
 
 ### Примеры запуска:
     * ansible-playbook -K install_nginx.yml -i <your path>/lab-ansible/playbook/hosts.ini
     * ansible-playbook -K install_postgres.yml -i <your path>/lab-ansible/playbook/hosts.ini
-
-    * ansible-playbook -K remove_nginx.yml -i <your path>/lab-ansible/playbook/hosts.ini
-    * ansible-playbook -K remove_postgres.yml -i <your path>/lab-ansible/playbook/hosts.ini
