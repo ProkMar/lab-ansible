@@ -1,0 +1,21 @@
+---
+- name: Remove postgres
+  hosts: black
+  become: True
+  remote_user: root
+
+  tasks:
+    - name: Stop service postgres, if started
+      ansible.builtin.systemd:
+        name: postgresql
+        state: stopped
+
+    - name: Uninstall postgres
+      apt:
+        name: postgres
+        state: absent
+
+    - name: Delete postgres folder
+      file:
+        path: /etc/postgresql
+        state: absent
