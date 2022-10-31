@@ -1,6 +1,6 @@
 ---
 - name: Configure webserver with nginx
-  hosts: white
+  hosts: nginx
   become: True
   tasks:
     - name: install nginx

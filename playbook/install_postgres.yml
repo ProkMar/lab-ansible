@@ -1,6 +1,6 @@
 ---
 - name: Install postgres
-  hosts: black
+  hosts: pg
   become: True
 
   vars_files:
