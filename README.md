@@ -28,14 +28,14 @@
 
 если они на самом деле не нужны на этих компьютерах.
 
-Примеры проверки:
+### Примеры проверки:
     * ansible-playbook -KC install_nginx.yml -i <your path>/lab-ansible/playbook/hosts.ini
     * ansible-playbook -KC install_postgres.yml -i <your path>/lab-ansible/playbook/hosts.ini
 
     * ansible-playbook -KC remove_nginx.yml -i <your path>/lab-ansible/playbook/hosts.ini
     * ansible-playbook -KC remove_postgres.yml -i <your path>/lab-ansible/playbook/hosts.ini
 
-Примеры запуска:
+### Примеры запуска:
     * ansible-playbook -K install_nginx.yml -i <your path>/lab-ansible/playbook/hosts.ini
     * ansible-playbook -K install_postgres.yml -i <your path>/lab-ansible/playbook/hosts.ini
 
